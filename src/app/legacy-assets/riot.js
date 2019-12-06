@@ -1,5 +1,5 @@
 /* Riot 1.0.2, @license MIT, (c) 2014 Muut Inc + contributors */
-export const riot = (function(riot) { "use strict";
+export const riot = (function(riot) {
 
   riot.observable = function(el) {
     var callbacks = {}, slice = [].slice;
