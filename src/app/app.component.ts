@@ -28,7 +28,9 @@ export class AppComponent implements OnInit {
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
       debugger;
-      onAppRoute(event.urlAfterRedirects);
+
+      setTimeout(() =>  onAppRoute(event.urlAfterRedirects), 5000);
+
     });
   }
 
