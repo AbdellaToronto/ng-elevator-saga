@@ -12,7 +12,7 @@ function newElevStateHandler(elevator) { elevator.handleNewState(); }
 
 export function Elevator(speedFloorsPerSec, floorCount, floorHeight, maxUsers) {
     newGuard(this, Elevator);
-    Movable.call(this);
+    // Movable.call(this);
     var elevator = this;
 
     elevator.ACCELERATION = floorHeight * 2.1;
@@ -50,6 +50,9 @@ export function Elevator(speedFloorsPerSec, floorCount, floorHeight, maxUsers) {
         elevator.trigger("indicatorstate_change", {up: elevator.goingUpIndicator, down: elevator.goingDownIndicator});
     });
 };
+
+
+// TODO: Make elevator into a class! Make that class extend movable! Goooood luck
 Elevator.prototype = Object.create(Movable.prototype);
 
 Elevator.prototype.setFloorPosition = function(floor) {
