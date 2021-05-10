@@ -22,7 +22,7 @@
     "@riotjs/observable": "^4.0.4",
     "codemirror": "^5.49.2",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "riot": "^4.6.6",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
